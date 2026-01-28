@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+</head>
+<body>
+ <h2>Image Tag Example</h2>
+ <img src="images/geoff-greenwood-rH1aA4TqGms-unsplash.jpg" alt="Bangkok City Street" width="1200"/>  
+ 
+ <h2>Video Tag Example</h2>
+ <video width="1200" controls>
+ <source src="video/200571-913040195_small.mp4" type="video/mp4">
+    Your browser literally cannot even with video tags
+    </video>
+
+    <h2>SVG via Tag Example</h2>
+    <img src="svg/handbag-34519.svg" alt="purse" width="800"/>
+    <h2>SVG via Code Example</h2>
+    <svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="tan circle">
+    <circle cx="60" cy="60" r="45" fill="#896745"></circle></svg>
+
+    <h2>Canvas Code Example</h2>
+    <canvas id="myCanvas" width="300" height="150"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "#218241";
+        ctx.fillRect(50, 50, 300, 50);
+    </script>
+</body>
+</html>
