@@ -1,22 +1,22 @@
 body {
-    background-color: #f2f2f2;
+    background-color: #fabcd9;
     font-family: Arial, sans-serif;
 }
 
 aside {
     background-color: white;
     width: 300px;
-    margin: 100 px auto;
+    margin: 100px auto;
     padding: 20px;
     text-align: center;
 }
 
 h2{
-    color: #333333;
+    color: #332198;
 }
 
 h3 {
-    color: #777777;
+    color: #789873;
     font-size: 14px;
 }
 
