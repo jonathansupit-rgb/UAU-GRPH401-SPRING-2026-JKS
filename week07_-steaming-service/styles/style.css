@@ -1,20 +1,31 @@
+.yes {
+    background-color: #0f0d13;
+}
 
 #hero h1 {
-    font-size: 50px;
-    background-color: black;
-    padding: 50px;
+    font-size: 60px;
+    background-color: rgb(138, 64, 18);
+    padding: 120px;
     color:#ffffff;
+    text-align: center;
+    font-family: Helvetica;
 }
 .section-title {
-    text-align: flex;
+    text-align: center;
     font-family: Helvetica;
+    margin-top: 150px;
     margin-left: 30px;
     font-size: 36px;
+    color:#ffffff;
 }
 
+.films {
 
+    display: flex;
+    justify-content: center;
+}
 .card {
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica;
     display: inline-block;
     vertical-align: top;
     margin: 60px 20px;
@@ -53,6 +64,10 @@
     margin: 10px;
     text-decoration: none;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
-
+.button:hover {
+    background-color: #fa9b5c;
+}
