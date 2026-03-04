@@ -1,6 +1,7 @@
 :root {
     --primary: #6c5ce7;
     --dark: #2d3436;
+    --alternate: #00b894;
     --light: #ffffff;
     --spacing: 20px;
 }
@@ -30,4 +31,22 @@ button {
     border: none;
     padding: 12px 24px;
     border-radius: 7px;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --spacing: 60px;
+    }
+    header {
+        background-color: var(--dark);
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        background-color: var(--alternate);
+    }
 }
