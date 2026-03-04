@@ -4,3 +4,30 @@
     --light: #ffffff;
     --spacing: 20px;
 }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+header {
+    padding: var(--spacing);
+    background: var(--primary);
+    color: var(--light);
+    text-align: center;
+}
+
+.hero {
+    padding: var(--spacing);
+    text-align: center;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 7px;
+}
