@@ -1,19 +1,40 @@
 :root {
-    --primary-color: #3498db;
+    --primary: #0b9790;
+    --dark: #2d3436;
+    --alternate: #00b894;
+    --light: #ffffff;
+    --spacing: 20px;
 }
 
-header {}
+header {
+
+
+}
 
 header h1 {
-    font-size: 45px;
+    padding: var(--spacing);
+    background: var(--primary);
+    color: var(--light);
+    text-align: center;
+    fonts
 }
 
 .card {
-
+    font-family: Helvetica;
+    display: inline-block;
+    vertical-align: top;
+    margin: 60px 20px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #90bdb4;
+    justify-content: center; 
 }
 
 .card img {
-    
+ width:100%;
+    border-radius: 10px;    
 }
 
 .card-content {
@@ -21,17 +42,52 @@ header h1 {
 }
 
 .card-content h2 {
-    
+ text-align: center; 
+ color: var(--light);   
 }
 
 .card-content p {
-    
+ text-align: center;    
 }
 
 .card-content button {
-    
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 7px;    
 }
 
 .card-content button:hover {
-    
+ background: #1dd2ae;   
+}
+
+@media (min-width: 50px) {
+    :root {
+        --spacing: 60px;
+    }
+    header {
+        background-color: var(--dark);
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --spacing: 60px;
+    }
+    header {
+        background-color: var(--alternate);
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        background-color: var(--primary-color);
+    }
 }
