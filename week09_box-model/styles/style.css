@@ -1,7 +1,8 @@
 .card {
     width: 300px;
     border: 1px solid #ddd;
-    padding: 40px;
+    padding: 20px;
+    margin: 40px;
 }
 
 img {
@@ -15,4 +16,10 @@ a {
     padding: 10px 16px 10px 16px;
     text-decoration: none;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
 }
