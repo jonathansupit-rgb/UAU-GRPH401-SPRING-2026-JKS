@@ -25,10 +25,7 @@
 }
 
 .card {
-    width: 300px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 40px;
+    margin: var(--card-margin);
     font-size: var(--paragraph-font-size);
     font-family: var(--font-family);
     border-radius: var(--card-border-radius);
