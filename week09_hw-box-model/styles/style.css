@@ -2,13 +2,15 @@
 
 :root {
     --primary-color: #007bff;
-    --secondary-color: #6c757d;
+    --secondary-color: #e5e8ec;
     --border-color: #dddddd;
     --border-width: 1px;
-    --button-background-color: #08aa8a;
+    --button-background-color: #0dbc99;
     --button-text-color: #ffffff;
-    --button-hover-background-color: #29efbd;
+    --button-hover-background-color: #21e3af;
     --button-padding: 10px 20px;
+    --button-border:0;
+    --button-border-radius:6px;
     --card-padding-mobile: 15px;
     --card-padding-desktop: 30px;
     --card-border-radius: 10px;
@@ -29,6 +31,9 @@
     margin: 40px;
     font-size: var(--paragraph-font-size);
     font-family: var(--font-family);
+    border-radius: var(--card-border-radius);
+    border-width: var(--border-width);
+    background-color: var(--secondary-color);
 }
 
 img {
@@ -39,38 +44,33 @@ button {
     background-color: var(--button-background-color);
     color: var(--button-text-color);
     padding: var(--button-padding);
+    border:var(--button-border);
+    border-radius: var(--button-border-radius);
 }
 
 button:hover{
     background-color: var(--button-hover-background-color);
 }
 
-a {
-    display: inline-block;
-    background: black;
-    color: white;
-    padding: 10px 16px 10px 16px;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
 @media (max-width: 767px) {
     .card {
-    width: var(--card-width-mobile)
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 40px;
+    width: var(--card-width-mobile);
+    padding: var(--card-padding-mobile);
+}
+h2 {
+    font-size: var(--heading-font-size-mobile);
 }
 
 }
 
 @media (min-width: 768px) {
     .card {
-    width: 300px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 40px;
-}
+    width: var(--card-width-desktop);
+    padding: var(--card-padding-desktop);
 
+}
+h2 {
+    font-size: var(--heading-font-size-desktop);
+}
 }
 
